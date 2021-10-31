@@ -1,0 +1,203 @@
+/* Header */
+header {
+}
+
+.top-icon {
+    list-style: none;
+    font-size: 32px;
+}
+
+.top-icon-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.navigation-wrapper {
+    padding: 0 130px;
+}
+
+.searchtab {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 0 auto;
+}
+
+.logo-search-wrap {
+    display: flex;
+    align-items: flex-end;
+    padding: 32px 48px;
+    flex-wrap: wrap;
+}
+
+.logo-wrapper {
+    max-width: 300px;
+}
+
+.searchtab-input {
+    width: 700px;
+    padding: 16px;
+    border-radius: 32px;
+}
+
+.toptext {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.toptext {
+    background-color: #0B3641;
+}
+
+.home-banner {
+    background-image: url(../images/banner-photo-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    color: #FF4E00;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-banner-text {
+font-weight: bold;
+font-size: 48px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+}
+
+.top-banner-text p {
+    text-transform: uppercase;
+    margin: 0 0 24px 0;
+}
+
+.cta-wrap {
+    display: flex;
+}
+
+.cta-banner {
+    padding: 15px;
+    height: 25px;
+    font-size: 1.5em;
+    background-color: #0B3641;
+    border-radius: 32px;
+    margin: 0 24px;
+}
+
+.cta-button {
+    color: #ffffff;
+}
+/* Main */
+
+main {
+    padding: 48px;
+}
+
+.jacket-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product__image {
+    max-height: 350px;
+}
+
+.bottom-banner {
+    background-image: url(../images/Camping\ Picture\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    color: #FF4E00;
+    margin-top: 48px;
+}
+
+.bottom-banner-text {
+    font-size: 48px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 48px;
+}
+
+.bottom-banner-h2 {
+    margin: 25px 0 10px 0;
+}
+
+.bottom-banner-paragraph {
+    margin: 0px;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: #0B3641;
+    color: #ffffff;
+}
+
+.footer-box {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer-link {
+    list-style: none;
+    padding: 0px;
+    font-size: 24px;
+}
+
+a {
+    color: #FF4E00;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1408px) {
+    body {
+    }
+
+    .logo-search-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .searchtab-input {
+        margin-top: 25px;
+    }
+}
