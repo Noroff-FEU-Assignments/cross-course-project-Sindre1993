@@ -1,3 +1,10 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+
 /* Header */
 header {
 }
@@ -92,6 +99,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
+background-color: rgba( 255, 255, 255, 0.4);
 }
 
 .top-banner-text p {
@@ -105,7 +113,6 @@ justify-content: flex-start;
 
 .cta-banner {
     padding: 15px;
-    height: 25px;
     font-size: 1.5em;
     background-color: #0B3641;
     border-radius: 32px;
@@ -118,7 +125,7 @@ justify-content: flex-start;
 /* Main */
 
 main {
-    padding: 48px;
+    padding: 0 48px 48px 48px;
 }
 
 .jacket-row {
@@ -200,4 +207,47 @@ a {
     .searchtab-input {
         margin-top: 25px;
     }
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .navigation-wrapper {
+        padding: 0%;
+    }
+
+    .home-banner {
+        min-height: 200px;
+    }
+
+    .top-banner-text {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+   
+    .logo-search-wrap {
+        padding: 32px 16px;
+    }
+
+    .top-banner-text {
+        font-size: 24px;
+    }
+
+    .searchtab {
+        justify-content: center;
+    }
+
+    .top-icon-wrap {
+        padding: 0;
+    }
+
+    .searchtab-input {
+        width: 450px;
+    }
+
+    .footer-box {
+        flex-wrap: nowrap;
+    }
+
 }
