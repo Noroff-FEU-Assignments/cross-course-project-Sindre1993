@@ -20,7 +20,7 @@ header {
 }
 
 body {
-    font-family: Roboto;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
     src: url(../fonts/Roboto-Bold.ttf);
     margin: 0;
     padding: 0;
@@ -79,6 +79,22 @@ body {
     background-color: #0B3641;
 }
 
+.female-banner {
+    background-image: url(../images/female-top-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.male-banner {
+    background-image: url(../images/male-top-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
 .home-banner {
     background-image: url(../images/banner-photo-2.jpg);
     background-repeat: no-repeat;
@@ -100,6 +116,38 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 background-color: rgba( 255, 255, 255, 0.4);
+}
+
+.female-banner-wrap {
+    font-weight: bold;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    text-transform: uppercase;
+}
+
+.male-banner-wrap {
+    font-weight: bold;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    text-transform: uppercase;
+}
+
+.male-banner-text {
+    display: flex;
+    justify-content: center;
+    width: 40%;    
+    margin: 20px;
+    color: #FF4E00;
+}
+
+.female-banner-text {
+    display: flex;
+    color: #FF4E00;
+    margin: 20px;
 }
 
 .top-banner-text p {
@@ -172,6 +220,10 @@ main {
 footer {
     background-color: #0B3641;
     color: #ffffff;
+}
+
+.footer-text-box {
+    margin-left: 25px;
 }
 
 .footer-box {
