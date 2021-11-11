@@ -182,8 +182,27 @@ main {
     padding: 0 48px 48px 48px;
 }
 
+.male-top-specific-text {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.jacket-specific {
+    height: 600px;
+}
+
+.product-specific-jacket-wrap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 label {
     font-weight: bold;
+}
+
+.product-specific-content-wrap {
+    display: grid;
+    grid-template-columns: auto 20%;
 }
 
 .product-content-wrap {
@@ -209,6 +228,31 @@ label {
 
 .product-content-filter li {
     margin-bottom: 6px;
+}
+
+.product-specific-select {
+    width: 200px;
+    height: 25px;
+}
+
+.product-specific-cta {
+    height: 50px;
+    width: 200px;
+    margin-top: 25px;
+    background-color: #0B3641;
+    color:white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.product-specific-favorite-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.product-specific-heart {
+    height: 20px;
 }
 
 .product-content-color {
@@ -262,6 +306,30 @@ label {
 
 .product__desc {
     font-weight: bold;
+}
+
+.product-specific-information-wrap {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-column-gap: 25px;
+    margin-top: 50px;
+    background-color:whitesmoke;
+    padding: 25px 10px;
+}
+
+.product-specific-h4 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.product-specific-image-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.product__image-specific {
+    height: 200px;
 }
 
 .bottom-banner {
