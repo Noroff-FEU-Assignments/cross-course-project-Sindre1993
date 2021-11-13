@@ -507,7 +507,9 @@ label {
 .about-wrap {
     background-color: #0B3641;
     color: white;
-    height: 300px;
+    height: auto;
+    margin: 25px 0px;
+    padding: 10px 0px;
 }
 /* Footer */
 
@@ -540,6 +542,7 @@ a {
 }
 
 @media only screen and (max-width: 1408px) {
+    
     body {
     }
 
@@ -552,7 +555,7 @@ a {
     .searchtab-input {
         margin-top: 25px;
     }
-}
+    }
 
 @media only screen and (max-width: 1250px) {
 
@@ -638,6 +641,10 @@ a {
     
     main {
         padding: 0px;
+    }
+
+    .about-logo {
+        min-height: 200px;
     }
 
     .jacket-specific {
