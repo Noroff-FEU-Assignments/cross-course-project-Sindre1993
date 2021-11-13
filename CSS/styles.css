@@ -623,6 +623,10 @@ a {
         justify-content: center;
     }
 
+    .male-banner {
+        display: none;
+    }
+
     .top-icon-wrap {
         padding: 0;
     }
@@ -656,9 +660,6 @@ a {
         display: grid;
     }
 
-    .male-banner {
-        display: none;
-    }
 
     .female-banner {
         display:none;
