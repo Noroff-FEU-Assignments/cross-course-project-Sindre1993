@@ -9,6 +9,9 @@ html, body {
 header {
 }
 
+.header-checkout {
+    font-size: 20px;
+}
 
 .top-icon {
     list-style: none;
@@ -18,6 +21,10 @@ header {
 .top-icon-wrap {
     display: flex;
     justify-content: space-around;
+}
+
+.toptext-section {
+    padding-right: 15px;
 }
 
 @font-face {
@@ -60,7 +67,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-column-gap: 35px;
-    width: 60%;
+    width: 600px;
     background-color: #e6e6e6;
     padding: 5px 25px 25px 25px;
     margin-top: 50px;
@@ -83,7 +90,7 @@ body {
 
 .checkout-select {
     height: 30px;
-    width: 120px;
+    width: 100px;
 }
 
 .checkout-container {
@@ -156,6 +163,11 @@ body {
     justify-content: center;
     margin: 50px;
 }
+
+.checkout-cta {
+    background-color: #0B3641;
+    color: white;
+    }
 
 .logo-search-wrap {
     display: flex;
@@ -241,7 +253,7 @@ background-color: rgba( 255, 255, 255, 0.4);
 
 .male-banner-wrap {
     font-weight: bold;
-    font-size: 48px;
+    font-size: 42px;
     display: flex;
     flex-direction: column;
     margin: 25px;
@@ -291,6 +303,7 @@ main {
 .male-top-specific-text {
     margin-left: 50px;
     margin-bottom: 50px;
+    font-size: 16px;
 }
 
 .jacket-specific {
@@ -326,6 +339,7 @@ label {
     border-bottom: 2px solid #FF4E00;
     color: #FF4E00;
 }
+
 
 .product-content-filter ul {
     padding: 0;
@@ -473,6 +487,7 @@ label {
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        margin-top: 50px;
 }
 
 .about-heading {
@@ -509,7 +524,6 @@ footer {
     display: flex;
     align-items: stretch;
     justify-content: space-around;
-    flex-wrap: wrap;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -540,6 +554,19 @@ a {
     }
 }
 
+@media only screen and (max-width: 1250px) {
+
+    .jacket-specific {
+        height: 400px;
+    }
+
+    .product-specific-content-wrap {
+
+        grid-template-columns: auto auto;
+    }
+
+}
+
 @media only screen and (max-width: 1000px) {
     
     .navigation-wrapper {
@@ -552,6 +579,29 @@ a {
 
     .top-banner-text {
         font-size: 36px;
+    }
+
+    .checkout {
+        display: grid;
+        grid-template-columns: unset;
+        width: 180px;
+    }
+
+    .product-specific-image-wrap {
+
+        display: grid;
+    }
+
+    .product-specific-jacket-wrap {
+        display: grid;
+    }
+
+    .bottom-banner-text {
+        font-size: 36px;
+    }
+
+    .bottom-banner-paragraph {
+        font-size: 56px;
     }
 }
 
@@ -577,8 +627,44 @@ a {
         width: 450px;
     }
 
+
     .footer-box {
         flex-wrap: nowrap;
+    }
+
+}
+
+@media only screen and (max-width: 625px) {
+    
+    main {
+        padding: 0px;
+    }
+
+    .jacket-specific {
+        height: 250px;
+    }
+
+    .footer-box {
+        display: grid;
+    }
+
+    .male-banner {
+        display: none;
+    }
+
+    .female-banner {
+        display:none;
+    }
+
+    .product-content-filter {
+        font-size: 12px;
+    }
+
+    .checkout-shipping {
+
+        display: flex;
+        flex-direction: column;
+
     }
 
 }
