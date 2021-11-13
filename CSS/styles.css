@@ -16,11 +16,14 @@ header {
 .top-icon {
     list-style: none;
     font-size: 32px;
+    margin-right: 24px;
 }
 
 .top-icon-wrap {
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
 .toptext-section {
@@ -49,13 +52,21 @@ body {
 }
 
 .navigation-wrapper {
-    padding: 0 130px;
+    padding-left: 64px;
+}
+
+.navigation-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 16px;
 }
 
 .searchtab {
     display: flex;
     justify-content: flex-start;
     flex: 1 0 auto;
+    margin-right: 24px;
 }
 
 .checkout-content-wrap {
@@ -175,6 +186,8 @@ body {
     align-items: flex-end;
     padding: 32px 48px;
     flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .logo-wrapper {
@@ -185,6 +198,7 @@ body {
     width: 700px;
     padding: 16px;
     border-radius: 32px;
+    margin: 15px;
 }
 
 .toptext {
@@ -193,6 +207,14 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 15px;
+}
+
+.toptextwrap {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 100%;
+    max-width: 1440px;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -241,6 +263,8 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 background-color: rgba( 255, 255, 255, 0.4);
+padding: 24px;
+margin-bottom: 24px;
 }
 
 .female-banner-wrap {
@@ -290,6 +314,7 @@ background-color: rgba( 255, 255, 255, 0.4);
     background-color: #0B3641;
     border-radius: 32px;
     margin: 0 24px;
+    color: white;
 }
 
 .cta-button {
@@ -299,10 +324,11 @@ background-color: rgba( 255, 255, 255, 0.4);
 
 main {
     padding: 0 48px 48px 48px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .male-top-specific-text {
-    margin-left: 50px;
     margin-bottom: 50px;
     font-size: 16px;
 }
@@ -313,7 +339,7 @@ main {
 
 .product-specific-jacket-wrap {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 label {
@@ -323,6 +349,7 @@ label {
 .product-specific-content-wrap {
     display: grid;
     grid-template-columns: auto 20%;
+    grid-column-gap: 25px;
 }
 
 .product-content-wrap {
@@ -519,16 +546,15 @@ footer {
     color: #ffffff;
 }
 
-.footer-text-box {
-    margin-left: 25px;
-}
 
 .footer-box {
     display: flex;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 32px;
     padding-bottom: 32px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .footer-link {
@@ -554,7 +580,6 @@ a {
     }
 
     .searchtab-input {
-        margin-top: 25px;
     }
     }
 
@@ -610,7 +635,11 @@ a {
 }
 
 @media only screen and (max-width: 760px) {
-   
+    
+    main {
+        padding: 24px;
+    }
+
     .logo-search-wrap {
         padding: 32px 16px;
     }
@@ -645,7 +674,7 @@ a {
 @media only screen and (max-width: 625px) {
     
     main {
-        padding: 0px;
+        padding: 16px;
     }
 
     .about-logo {
