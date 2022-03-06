@@ -265,6 +265,7 @@ body {
   padding: 24px;
   margin-bottom: 24px;
   border-radius: 50px;
+  user-select: none;
 }
 
 .female-banner-wrap {
@@ -291,12 +292,14 @@ body {
   width: 40%;
   margin: 20px;
   color: #ffffff;
+  user-select: none;
 }
 
 .female-banner-text {
   display: flex;
   color: #ff4e00;
   margin: 20px;
+  user-select: none;
 }
 
 .top-banner-text p {
@@ -497,6 +500,7 @@ label {
   flex-direction: column;
   align-items: flex-end;
   margin: 48px;
+  user-select: none;
 }
 
 .bottom-banner-h2 {
