@@ -27,6 +27,7 @@ header {
 }
 
 .toptext-section {
+  color: white;
   padding-right: 15px;
 }
 
@@ -571,6 +572,87 @@ a {
   text-decoration: none;
 }
 
+#contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+  border-radius: 5px;
+  border: 2px solid;
+}
+
+.contactHeading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  font-size: 1.3em;
+}
+
+.contactText {
+  margin: 5px 0px;
+  opacity: 50%;
+}
+
+.contact-submit {
+  background-color: #0b3641;
+  border: none;
+  width: 250px;
+  padding: 1rem;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.15s;
+}
+
+.contact-submit:hover {
+  background-color: #082229;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.contactInput {
+  width: 50%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.contactDetails {
+  width: 50%;
+  margin-top: 5px;
+  padding: 50px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactWrap {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 38px;
+}
+
+.form-error {
+  display: none;
+  color: #dc3545;
+  padding-top: 10px;
+}
+
+.invalidFeedback {
+  border: 2px solid #dc3545;
+  outline: 0;
+}
+
 @media only screen and (max-width: 1408px) {
   body {
   }
@@ -580,11 +662,7 @@ a {
     align-items: center;
     justify-content: center;
   }
-
-  .searchtab-input {
-  }
 }
-
 @media only screen and (max-width: 1250px) {
   .jacket-specific {
     height: 400px;
