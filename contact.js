@@ -23,6 +23,7 @@ function validateForm(form) {
 
   if (checkLength(subject.value, 9) === true) {
     subjectError.style.display = "none";
+    subject.classList.remove("invalidFeedback");
   } else {
     subjectError.style.display = "block";
     subject.classList.add("invalidFeedback");
@@ -30,6 +31,7 @@ function validateForm(form) {
 
   if (validateEmail(email.value) === true) {
     emailError.style.display = "none";
+    email.classList.remove("invalidFeedback");
   } else {
     emailError.style.display = "block";
     email.classList.add("invalidFeedback");
@@ -37,13 +39,15 @@ function validateForm(form) {
 
   if (checkLength(address.value, 9) === true) {
     addressError.style.display = "none";
+    address.classList.remove("invalidFeedback");
   } else {
     addressError.style.display = "block";
     address.classList.add("invalidFeedback");
   }
 
-  if (checkLength(subject.value, 9) === true) {
+  if (checkLength(details.value, 14) === true) {
     detailsError.style.display = "none";
+    details.classList.remove("invalidFeedback");
   } else {
     detailsError.style.display = "block";
     details.classList.add("invalidFeedback");
