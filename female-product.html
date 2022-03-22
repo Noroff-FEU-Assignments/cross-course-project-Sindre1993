@@ -15,7 +15,7 @@
     </script>
     <!-- Hotjar Tracking Code for https://gracious-lovelace-9aadfc.netlify.app/ -->
 <script>
-    (function(h,o,t,j,a,r){
+  (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:2861886,hjsv:6};
         a=o.getElementsByTagName('head')[0];
@@ -34,7 +34,7 @@
         <div>
           <span class="toptext-section">Login</span>
           <span class="toptext-section">English / USD</span>
-          <span class="toptext-section">Contact Us</span>
+          <a class="toptext-section" href="contact.html">Contact Us</a>
           <span class="toptext-section">Stores</span>
           </div>
         </div>
@@ -67,7 +67,7 @@
                   <i class="fas fa-user-circle"></i>
                 </li>
                 <li class="top-icon">
-                  <i class="fas fa-shopping-cart"></i>
+                  <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
                 </li>
             </ul>
             </div>
@@ -96,14 +96,14 @@
       <h1 class="male-top-specific-text">Home - Female - Jackets & Coats - Tiffany Dam - Welsey II Trench</h1>
       <div class="product-specific-content-wrap">
         <section class="product-specific-jacket-wrap">
-          <img class ="jacket-specific" src="images/jacket-female-one.png" alt="">
-            <img class ="jacket-specific" src="images/jacket-female-one-back.png" alt="">
+          <img id="imageFront" class ="jacket-specific" src="images/jacket-female-one.png" alt="">
+            <img  id="imageBack" class ="jacket-specific" src="images/jacket-female-one-back.png" alt="">
         </section>
       <section  class="product-content-filter">
         <div>
-          <h2>Tiffany Dam</h2>
-          <p>Welsey II Trench</p>
-          <p>149$ USD</p>
+          <h2 id="productBrand">Tiffany Dam</h2>
+          <p id="productName">Welsey II Trench</p>
+          <p id="productPrice">149$ USD</p>
           <h4 class="product-content-cat">Color</h4>
             <ul>
               <li class="product-content-color-li">
@@ -123,7 +123,7 @@
                 <span class="product-content-color-text">Brown</span>
               </li>
               <h4 class="product-content-cat">Choose Size</h4>
-              <select class="product-specific-select" name="Choose Size" id="Choose-Size">
+              <select class="product-specific-select" name="Choose Size" id="productSize">
                 <option value hidden="Choose-Size">Choose Size</option>
                 <option value="S">Small</option>
                 <option value="M">Medium</option>
@@ -132,7 +132,7 @@
                 <option value="XXL">XX-Large</option>
               </select>
             </ul>
-              <a class="checkout-button" href="checkout-female.html">Add to Cart</a>
+            <button class="checkout-button" id="cartCTA">Add to Cart</button>
               <div class="product-specific-favorite-wrap">
               <img class="product-specific-heart" src="images/outline_favorite_black_48dp.png" alt="">
               <p>Add to favorites</p>
@@ -236,5 +236,6 @@
         </div>
       </section>
     </footer>
+    <script src="cart.js" type="module"></script>
   </body>
 </html>
