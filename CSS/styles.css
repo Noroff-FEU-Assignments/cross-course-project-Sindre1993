@@ -82,6 +82,7 @@ body {
   background-color: #e6e6e6;
   padding: 5px 25px 25px 25px;
   margin-top: 50px;
+  border-radius: 25px;
 }
 
 .checkout-shipping {
@@ -93,6 +94,13 @@ body {
 .checkout-image {
   height: 235px;
   width: 175px;
+  border-radius: 25px;
+}
+
+.cart-image {
+  height: 235px;
+  width: 175px;
+  border-radius: 25px;
 }
 
 .checkout-text {
@@ -113,6 +121,7 @@ body {
   height: 300px;
   margin-top: 50px;
   background-color: #e6e6e6;
+  border-radius: 25px;
 }
 
 .checkout-text-wrap {
@@ -136,6 +145,7 @@ body {
   margin-top: 50px;
   background-color: #e6e6e6;
   padding: 10px;
+  border-radius: 25px;
 }
 
 .checkout-delivery-method {
@@ -168,6 +178,13 @@ body {
   height: 70px;
   width: 250px;
   font-size: 24px;
+  transition: 0.15s;
+  border-radius: 5px;
+}
+
+.checkout-button:hover {
+  background-color: #082229;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .checkout-button-wrap {
@@ -179,6 +196,27 @@ body {
 .checkout-cta {
   background-color: #0b3641;
   color: white;
+}
+
+.proceedCTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 250px;
+  background-color: #0b3641;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.cartCTA-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .logo-search-wrap {
@@ -243,7 +281,7 @@ body {
 }
 
 .home-banner {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/banner-photo-2.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/banner-photo-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -262,7 +300,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: rgba(255, 255, 255, 0.4);
   padding: 24px;
   margin-bottom: 24px;
   border-radius: 50px;
@@ -319,6 +356,7 @@ body {
   border-radius: 32px;
   margin: 0 24px;
   color: white;
+  transition: 0.15s;
 }
 
 .cta-button {
@@ -616,6 +654,11 @@ textarea {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.cta-banner:hover {
+  background-color: #082229;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
 .contactInput {
   width: 50%;
   margin-top: 2px;
@@ -651,6 +694,35 @@ textarea {
 .invalidFeedback {
   border: 2px solid #dc3545;
   outline: 0;
+}
+
+.cart-content-wrap {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.cart-bag {
+  background-color: #e6e6e6;
+  width: 600px;
+  padding: 5px 25px 25px 25px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 25px;
+  border-radius: 25px;
+}
+
+.cart-price {
+  background-color: #e6e6e6;
+  width: 300px;
+  padding: 5px 25px 25px 25px;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+
+.price-wrap {
+  padding-top: 50px;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 1408px) {
@@ -771,5 +843,6 @@ textarea {
   .checkout-shipping {
     display: flex;
     flex-direction: column;
+    border-radius: 25px;
   }
 }
