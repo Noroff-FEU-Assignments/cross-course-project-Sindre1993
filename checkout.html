@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Checkout Page for Rainy Days" />
-    <title>RainyDays | Checkout Female</title>
+    <title>RainyDays | Male Checkout</title>
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://kit.fontawesome.com/609d84a13a.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for https://gracious-lovelace-9aadfc.netlify.app/ -->
@@ -58,7 +58,7 @@
                 <i class="fas fa-user-circle"></i>
               </li>
               <li class="top-icon">
-                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <i class="fas fa-shopping-cart"></i>
               </li>
             </ul>
           </div>
@@ -86,49 +86,12 @@
     </header>
     <main>
       <div class="checkout-content-wrap">
-        <section class="checkout">
-          <div>
-            <h1 class="header-checkout">1. Shoppingbag</h1>
-            <img class="checkout-image" src="images/jacket-female-one.png" alt="Tiffany Dam Welsey II Trench" />
-          </div>
-          <div>
-            <p class="checkout-text">Product</p>
-            <p>Tiffany Dam</p>
-            <p>Welsey II Trench</p>
-            <p>Beige</p>
-          </div>
-          <div>
-            <p class="checkout-text">Size</p>
-            <select class="checkout-select" name="Choose Size" id="Choose-Size">
-              <option value hidden="Choose-Size">Choose Size</option>
-              <option value="S">Small</option>
-              <option value="M">Medium</option>
-              <option value="L">Large</option>
-              <option value="XL">X-Large</option>
-              <option value="XXL">XX-Large</option>
-            </select>
-          </div>
-          <div>
-            <p class="checkout-text">Amount</p>
-            <select class="checkout-select" name="Amount" id="Amount">
-              <option value hidden="Amount">Amount</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-          <div>
-            <p class="checkout-text">Total</p>
-            <p>149$ USD</p>
-          </div>
-        </section>
-        <section class="checkout-order">
+        <section id="checkoutBag" class="checkout"></section>
+        <section id="checkout-price" class="checkout-order">
           <p class="checkout-total">Your Order:</p>
           <div class="checkout-text-wrap">
             <p>Products:</p>
-            <p>149$ USD</p>
+            <p id="totalPrice">$ USD</p>
           </div>
           <div class="checkout-text-wrap">
             <p>Delivery:</p>
@@ -136,7 +99,7 @@
           </div>
           <div class="checkout-text-wrap">
             <p class="checkout-total">Total:</p>
-            <p class="checkout-total">149$ USD</p>
+            <p id="totalValue" class="checkout-total">$ USD</p>
           </div>
         </section>
       </div>
@@ -249,5 +212,6 @@
         </div>
       </section>
     </footer>
+    <script src="checkout.js" type="module"></script>
   </body>
 </html>

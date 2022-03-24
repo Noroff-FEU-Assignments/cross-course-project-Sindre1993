@@ -86,22 +86,14 @@
     </header>
     <main>
       <div class="cart-content-wrap">
-        <section class="cart-bag">
-          <div>
-            <h1>My Shopping Bag</h1>
-            <img class="cart-image" src="images/jacket-male-one.png" alt="Nike Heavy Duty Patriots Jacket" />
-          </div>
-          <div class="price-wrap">
-            <p>Price</p>
-            <p>Brand, Name</p>
-            <p>Size, quantity, color</p>
-          </div>
+        <section class="cart-bag" id="cart-bag">
+          <h1>My Shopping Bag</h1>
         </section>
         <section class="cart-price">
           <h2>Total</h2>
           <div class="checkout-text-wrap">
             <p>Products:</p>
-            <p>249$ USD</p>
+            <p id="totalPrice">$ USD</p>
           </div>
           <div class="checkout-text-wrap">
             <p>Delivery:</p>
@@ -109,10 +101,13 @@
           </div>
           <div class="checkout-text-wrap">
             <p class="checkout-total">Total:</p>
-            <p class="checkout-total">249$ USD</p>
+            <p id="totalValue" class="checkout-total">$ USD</p>
           </div>
           <div class="cartCTA-wrap">
-            <a href="checkout-male.html" class="proceedCTA">Proceed to Checkout</a>
+            <a href="checkout.html" class="proceedCTA">Proceed to Checkout</a>
+          </div>
+          <div class="paymentMethod">
+            <p>We accept:</p>
           </div>
         </section>
       </div>
@@ -161,6 +156,6 @@
         </div>
       </section>
     </footer>
-    <script src="cart.js" type="module"></script>
+    <script src="cartReview.js" type="module"></script>
   </body>
 </html>
