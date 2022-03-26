@@ -19,11 +19,29 @@ header {
   margin-right: 24px;
 }
 
+.fas {
+  color: black;
+}
+
 .top-icon-wrap {
   display: flex;
   justify-content: space-around;
   padding: 0;
   margin: 0;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon__number {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  border-radius: 50%;
+  top: -15px;
+  right: -29px;
 }
 
 .toptext-section {
@@ -115,16 +133,18 @@ body {
 
 .checkout-order {
   width: 300px;
-  height: 300px;
+  height: 360px;
   margin-top: 50px;
   background-color: #e6e6e6;
   border-radius: 25px;
+  padding: 5px 25px 25px 25px;
 }
 
 .checkout-text-wrap {
   display: flex;
   justify-content: space-between;
   padding: 0 10px 0 10px;
+  text-decoration: underline 2px black;
 }
 
 .checkout-total {
@@ -480,11 +500,12 @@ label {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 25px;
 }
 
 .product__image {
   max-height: 350px;
-  border-radius: 25px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 .product__price {
@@ -517,6 +538,16 @@ label {
 
 .product__image-specific {
   height: 200px;
+}
+
+.product:hover {
+  background-color: grey;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+.product-center {
+  padding-left: 15px;
 }
 
 .bottom-banner {
@@ -715,12 +746,30 @@ textarea {
   max-height: 400px;
 }
 
+.emptyCart {
+  display: flex;
+  justify-content: center;
+  font-size: 38px;
+  color: #ff4e00;
+  padding-top: 50px;
+}
+
 .paymentMethod {
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
+  height: 60px;
+}
+
+.paymentMethodWrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.acceptedMethod {
+  height: 50px;
 }
 
 .price-wrap {
@@ -728,6 +777,15 @@ textarea {
   font-size: 24px;
   display: flex;
   gap: 20px;
+}
+
+.removeItem {
+  height: 35px;
+  width: 150px;
+  background: red;
+  border-color: black;
+  color: white;
+  border-radius: 15px;
 }
 
 @media only screen and (max-width: 1408px) {

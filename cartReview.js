@@ -1,12 +1,14 @@
 const cartBag = document.getElementById("cart-bag");
+const removeItem = document.getElementsByClassName("removeItem");
+const priceWrap = document.getElementsByClassName("cart-price");
 
 let shoppingCartItems = JSON.parse(localStorage.getItem("shoppingCart"));
 
 let total = 0;
 if (!shoppingCartItems) {
   const emptyCart = document.createElement("p");
-
-  emptyCart.innerHTML = "Your shoppingcart is empty";
+  emptyCart.setAttribute("class", "emptyCart");
+  emptyCart.innerHTML = "Your shoppingcart is empty :(";
 
   cartBag.appendChild(emptyCart);
 } else {
@@ -15,13 +17,14 @@ if (!shoppingCartItems) {
 
     const itemElement = document.createElement("div");
     itemElement.innerHTML = `
-                  <div>
+                  <div class="cart-wrap">
                   <img class="cart-image" src="${item.imageFront}"</img>
                   </div>
-                  <div>
+                  <div class="cart-row">
                   <p>Price: $${parseFloat(item.price)}</p>
                   <p>${item.brand}, ${item.name}</p>
                   <p>Size: ${item.size}</p>
+                  <button class="removeItem" type="button">REMOVE</button>
                   </div>
                   `;
     itemElement.className = "price-wrap";
@@ -30,10 +33,18 @@ if (!shoppingCartItems) {
       cartBag.appendChild(document.createElement("hr"));
     }
 
-    const itemPrice = parseFloat(item.price); // "$149 USD" -> 149
+    const itemPrice = parseFloat(item.price);
     console.log("price", itemPrice);
     total = total + itemPrice;
   }
+}
+
+for (let i = 0; i < removeItem.length; i++) {
+  const removeButton = removeItem[i];
+  removeButton.addEventListener(`click`, function (removed) {
+    const buttonClicked = removed.target;
+    buttonClicked.parentElement.parentElement.remove();
+  });
 }
 
 const totalPrice = document.getElementById("totalPrice");
