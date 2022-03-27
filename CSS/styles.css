@@ -104,6 +104,7 @@ body {
   background-color: #e6e6e6;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border-radius: 25px;
 }
 
 .checkout-image {
@@ -731,7 +732,7 @@ textarea {
 
 .cart-bag {
   background-color: #e6e6e6;
-  width: 600px;
+  max-width: 600px;
   padding: 5px 25px 25px 25px;
   margin-top: 50px;
   border-radius: 25px;
@@ -805,6 +806,29 @@ textarea {
 
   .product-specific-content-wrap {
     grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .cart-content-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkout-content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .checkout-shipping-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: unset;
   }
 }
 
@@ -893,6 +917,7 @@ textarea {
 
   .footer-box {
     display: grid;
+    justify-content: center;
   }
 
   .female-banner {
@@ -906,6 +931,24 @@ textarea {
   .checkout-shipping {
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .jacket-row {
+    justify-content: center;
+  }
+
+  .navigation {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .navigation-grid {
+    justify-content: center;
+  }
+
+  .top-icon-wrap {
+    padding-top: 10px;
   }
 }

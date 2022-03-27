@@ -1,14 +1,18 @@
+import { createCart } from "./cart-number.js";
+
 const cartBag = document.getElementById("cart-bag");
 const removeItem = document.getElementsByClassName("removeItem");
 const priceWrap = document.getElementsByClassName("cart-price");
 
 let shoppingCartItems = JSON.parse(localStorage.getItem("shoppingCart"));
 
+createCart();
+
 let total = 0;
 if (!shoppingCartItems) {
   const emptyCart = document.createElement("p");
   emptyCart.setAttribute("class", "emptyCart");
-  emptyCart.innerHTML = "Your shoppingcart is empty :(";
+  emptyCart.innerHTML = "Your shopping cart is empty :(";
 
   cartBag.appendChild(emptyCart);
 } else {
