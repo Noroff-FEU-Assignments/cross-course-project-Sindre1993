@@ -14,7 +14,8 @@ async function getProductDetails(url) {
   document.querySelector("#productPrice").innerHTML = `NOK: ${product.prices.price},-`;
   document.querySelector("#imageFront").src = product.images[0].src;
   document.querySelector("#imageBack").src = product.images[1].src;
-  //   document.querySelector("#imageBack").src = product.images[1].src;
+  document.querySelector(".productDescription").innerHTML = product.short_description;
+  document.querySelector(".productSpecifications").innerHTML = product.description;
 }
 
 getProductDetails(baseUrl);
