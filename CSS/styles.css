@@ -397,9 +397,17 @@ main {
   height: 600px;
 }
 
+.product {
+  width: 250px;
+  margin-bottom: 25px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
 .product-specific-jacket-wrap {
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
 }
 
 label {
@@ -507,6 +515,15 @@ label {
 .product__image {
   max-height: 350px;
   border-radius: 25px 25px 0px 0px;
+  width: 100%;
+}
+
+#imageFront {
+  border-radius: 25px;
+}
+
+#imageBack {
+  border-radius: 25px;
 }
 
 .product__price {
@@ -542,13 +559,12 @@ label {
 }
 
 .product:hover {
-  background-color: grey;
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
 }
 
 .product-center {
-  padding-left: 15px;
+  padding: 0px 10px 10px 10px;
 }
 
 .bottom-banner {

@@ -3,7 +3,6 @@ const addToCartButton = document.getElementById("cartCTA");
 function addToCart() {
   const product = {
     brand: document.querySelector("#productBrand").textContent,
-    name: document.querySelector("#productName").textContent,
     price: parseFloat(document.querySelector("#productPrice").textContent),
     imageFront: document.querySelector("#imageFront").src,
     imageBack: document.querySelector("#imageBack").src,
