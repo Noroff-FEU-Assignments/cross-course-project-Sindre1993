@@ -11,6 +11,7 @@ async function getProductDetails(url) {
   const response = await fetch(url);
   let product = await response.json();
   document.querySelector("#productBrand").innerHTML = product.name;
+  document.querySelector(".male-top-specific-text").innerHTML = "Home - Jackets & Coats" + " " + "-" + " " + product.name;
   document.querySelector("#productPrice").innerHTML = `NOK: ${product.prices.price},-`;
   document.querySelector("#imageFront").src = product.images[0].src;
   document.querySelector("#imageBack").src = product.images[1].src;
