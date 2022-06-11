@@ -1,4 +1,4 @@
-# Sindre Østby Portfolio
+# Sindre Østby RainyDays
 
 ![rainydays](https://user-images.githubusercontent.com/91755046/173196981-721aa952-fe44-4403-86a5-1f73fb1e0bfb.jpg)
 
